@@ -1,0 +1,13 @@
+# Temporary files from Arduino IDE
+*.o
+*.d
+*.eep
+*.elf
+*.hex
+*.bin
+*.lss
+*.map
+*.sym
+
+# Build folders
+build-*/
