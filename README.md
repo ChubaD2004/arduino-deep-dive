@@ -12,26 +12,26 @@ Each lesson will be implemented in two ways for comparison:
 2.  **The Engineer's Way:** Achieving the same result by direct register manipulation.
 
 ### Module 1: Digital I/O
-- **Lesson 1: The "Blink" Re-engineered**
+- [ ] **Lesson 1: The "Blink" Re-engineered**
   - **Goal:** Control a digital output pin to blink an LED.
   - **Concepts:** I/O Ports, Data Direction Registers (`DDRx`), Port Data Registers (`PORTx`).
-- **Lesson 2: Reading a Button**
+- [ ] **Lesson 2: Reading a Button**
   - **Goal:** Read the state of a digital input pin.
   - **Concepts:** Input Pull-up Resistors, Port Input Pins Registers (`PINx`).
 
 ### Module 2: Communication Protocols
-- **Lesson 3: UART Communication**
+- [ ] **Lesson 3: UART Communication**
   - **Goal:** Send and receive data between the microcontroller and a computer.
   - **Concepts:** UART registers (`UDR0`, `UCSRnA/B/C`, `UBRRn`), Baud Rate, Frame Format.
-- **Lesson 4: I2C Communication**
-  - **Goal:** Read data from a simple I2C sensor (e.g., temperature/humidity sensor).
+- [ ] **Lesson 4: I2C Communication**
+  - **Goal:** Read data from a simple I2C sensor.
   - **Concepts:** Master/Slave, Start/Stop conditions, Acknowledge bit, I2C registers (`TWBR`, `TWSR`, `TWCR`, `TWDR`).
 
 ### Module 3: Timers and Analog Signals
-- **Lesson 5: Timers and Interrupts**
+- [ ] **Lesson 5: Timers and Interrupts**
   - **Goal:** Create a precise, non-blocking delay using a hardware timer and interrupts.
   - **Concepts:** Timers/Counters, Prescalers, Interrupt Service Routines (ISR), Timer registers (`TCNTx`, `TCCRxA/B`, `TIMSKx`, `TIFRx`).
-- **Lesson 6: Analog to Digital Conversion (ADC)**
+- [ ] **Lesson 6: Analog to Digital Conversion (ADC)**
   - **Goal:** Read an analog value from a potentiometer.
   - **Concepts:** ADC principles, voltage reference, ADC registers (`ADMUX`, `ADCSRA`).
 
