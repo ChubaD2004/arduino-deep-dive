@@ -1,13 +1,12 @@
-# Temporary files from Arduino IDE
-*.o
-*.d
-*.eep
-*.elf
-*.hex
-*.bin
-*.lss
-*.map
-*.sym
+# PlatformIO temporary files
+.pio/
+.vscode/
 
-# Build folders
-build-*/
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE temporary files
+*.swp
+*.swo
