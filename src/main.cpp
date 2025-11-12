@@ -1,11 +1,14 @@
 #include <Arduino.h>
 
-#include "Module 1 - Digital IO/Lesson 1 - The Blink Re-engineered/Blink.h"
+// Change this line to run a different lesson
+#include "Module 1 - Digital IO/Lesson 2 - Reading a Button/Button.h"
 
 void setup() {
-  blink_setup();
+  // Call the setup function from the selected lesson
+  button_setup();
 }
 
 void loop() {
-  blink_loop();
+  // Call the loop function from the selected lesson
+  button_loop();
 }

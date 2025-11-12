@@ -7,17 +7,25 @@ The main goal is to move beyond the high-level Arduino functions and learn how t
 ---
 
 ## Learning Roadmap
-Each lesson will be implemented in two ways for comparison:
-1.  **The Arduino Way:** Using standard, high-level Arduino library functions.
-2.  **The Engineer's Way:** Achieving the same result by direct register manipulation.
+
+Each lesson is implemented using direct register manipulation ("The Engineer's Way").
+The code for each lesson is located in the `src/` directory, structured by modules.
+Schematics are located in the `schematics/` directory.
+
+---
 
 ### Module 1: Digital I/O
-- [ ] **Lesson 1: The "Blink" Re-engineered**
+- [x] **Lesson 1: The Blink Re-engineered**
   - **Goal:** Control a digital output pin to blink an LED.
   - **Concepts:** I/O Ports, Data Direction Registers (`DDRx`), Port Data Registers (`PORTx`).
-- [ ] **Lesson 2: Reading a Button**
+  - **[Code]**(src/Module%201%20-%20Digital%20IO/Lesson%201%20-%20The%20Blink%20Re-engineered/Blink.cpp)
+
+- [x] **Lesson 2: Reading a Button**
   - **Goal:** Read the state of a digital input pin.
   - **Concepts:** Input Pull-up Resistors, Port Input Pins Registers (`PINx`).
+  - **[Code]**(src/Module%201%20-%20Digital%20IO/Lesson%202%20-%20Reading%20a%20Button/Button.cpp)
+  - **[Schematic]**(schematics/lesson-02-button-schematic.svg)
+    ![Lesson 2 Schematic](./schematics/lesson-02-button-schematic.svg)
 
 ### Module 2: Communication Protocols
 - [ ] **Lesson 3: UART Communication**
