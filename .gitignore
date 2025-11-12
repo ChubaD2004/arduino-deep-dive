@@ -10,3 +10,12 @@ desktop.ini
 # IDE temporary files
 *.swp
 *.swo
+
+# KiCad temporary files
+*-cache.lib
+*.kicad_prl
+*.kicad_pro
+*.kicad_sch.lck
+*.kicad_pcb.lck
+*.zip
+*#auto_saved_files#*
