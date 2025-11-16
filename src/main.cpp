@@ -1,14 +1,15 @@
 #include <Arduino.h>
-
-// Change this line to run a different lesson
-#include "Module 1 - Digital IO/Lesson 2 - Reading a Button/Button.h"
+#include "Module 2 - Communication Protocols/Lesson 3 - UART Communication/UART.h" 
 
 void setup() {
-  // Call the setup function from the selected lesson
-  button_setup();
+  // Initialize our custom UART module.
+  uart_init();
 }
 
 void loop() {
-  // Call the loop function from the selected lesson
-  button_loop();
+  // Send our test string.
+  uart_send_string("Hello from ATmega328P!\n"); // \n is the newline character.
+  
+  // Wait for 2 seconds.
+  delay(2000);
 }
