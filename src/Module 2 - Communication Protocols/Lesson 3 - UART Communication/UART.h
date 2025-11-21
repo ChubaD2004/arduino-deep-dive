@@ -2,7 +2,9 @@
 #define UART_H
 
 // Initializes the UART module.
-void uart_init();
+void lesson_3_setup();
+
+void lesson_3_loop();
 
 // Transmits a single character.
 void uart_send_char(unsigned char data);

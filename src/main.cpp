@@ -1,15 +1,43 @@
 #include <Arduino.h>
-#include "Module 2 - Communication Protocols/Lesson 3 - UART Communication/UART.h" 
 
+// --- Step 1: Lesson Selection ---
+// Define which lesson to run. Comment out the others.
+#define LESSON_1_BLINK
+// #define LESSON_2_BUTTON
+// #define LESSON_3_UART
+
+// --- Step 2: Include Headers based on Selection ---
+#ifdef LESSON_1_BLINK
+  #include "Module 1 - Digital IO/Lesson 1 - The Blink Re-engineered/Blink.h"
+#endif
+
+#ifdef LESSON_2_BUTTON
+  #include "Module 1 - Digital IO/Lesson 2 - Reading a Button/Button.h"
+#endif
+
+#ifdef LESSON_3_UART
+  #include "Module 2 - Communication Protocols/Lesson 3 - UART Communication/UART.h"
+#endif
+
+// --- Step 3: Main Program Logic ---
 void setup() {
-  // Initialize our custom UART module.
-  uart_init();
+  #if defined(LESSON_1_BLINK)
+    lesson_1_setup();
+  #elif defined(LESSON_2_BUTTON)
+    lesson_2_setup();
+  #elif defined(LESSON_3_UART)
+    lesson_3_setup();
+  #else
+    #error "No lesson selected. Please define a lesson at the top of main.cpp"
+  #endif
 }
 
 void loop() {
-  // Send our test string.
-  uart_send_string("Hello from ATmega328P!\n"); // \n is the newline character.
-  
-  // Wait for 2 seconds.
-  delay(2000);
+  #if defined(LESSON_1_BLINK)
+    lesson_1_loop();
+  #elif defined(LESSON_2_BUTTON)
+    lesson_2_loop();
+  #elif defined(LESSON_3_UART)
+    lesson_3_loop();
+  #endif
 }
