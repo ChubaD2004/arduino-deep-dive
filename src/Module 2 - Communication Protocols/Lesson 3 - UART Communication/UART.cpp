@@ -1,7 +1,8 @@
+#include <Arduino.h> 
 #include "UART.h"
 #include <avr/io.h> 
 
-void uart_init() {
+void lesson_3_setup() {
     // 1. Set the Baud Rate for 9600 bps at 16MHz clock.
     unsigned int ubrr_value = 103;
     UBRR0H = (ubrr_value >> 8);
@@ -12,6 +13,14 @@ void uart_init() {
 
     // 3. Set the frame format: 8 data bits, 1 stop bit (8N1).
     UCSR0C |= (1 << UCSZ01) | (1 << UCSZ00);
+}
+
+void lesson_3_loop() {
+    // Send our test string.
+    uart_send_string("Hello from ATmega328P!\n"); // \n is the newline character.
+    
+    // Wait for 2 seconds.
+    delay(2000);
 }
 
 void uart_send_char(unsigned char data) {

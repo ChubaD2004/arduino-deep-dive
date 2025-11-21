@@ -1,4 +1,4 @@
 #pragma once
 
-void blink_setup();
-void blink_loop();
+void lesson_1_setup();
+void lesson_1_loop();
