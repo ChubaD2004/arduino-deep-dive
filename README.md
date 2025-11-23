@@ -28,19 +28,19 @@ Schematics are located in the `schematics/` directory.
     ![Lesson 2 Schematic](./schematics/lesson-02-button-schematic.svg)
 
 ### Module 2: Communication Protocols
-- [ ] **Lesson 3: UART Communication**
+- [x] **Lesson 3: UART Communication**
   - **Goal:** Send and receive data between the microcontroller and a computer.
   - **Concepts:** UART registers (`UDR0`, `UCSRnA/B/C`, `UBRRn`), Baud Rate, Frame Format.
-- [ ] **Lesson 4: I2C Communication**
-  - **Goal:** Read data from a simple I2C sensor.
-  - **Concepts:** Master/Slave, Start/Stop conditions, Acknowledge bit, I2C registers (`TWBR`, `TWSR`, `TWCR`, `TWDR`).
 
 ### Module 3: Timers and Analog Signals
-- [ ] **Lesson 5: Timers and Interrupts**
+- [x] **Lesson 4: Timers and Interrupts**
   - **Goal:** Create a precise, non-blocking delay using a hardware timer and interrupts.
   - **Concepts:** Timers/Counters, Prescalers, Interrupt Service Routines (ISR), Timer registers (`TCNTx`, `TCCRxA/B`, `TIMSKx`, `TIFRx`).
-- [ ] **Lesson 6: Analog to Digital Conversion (ADC)**
+- [ ] **Lesson 5: Analog to Digital Conversion (ADC)**
   - **Goal:** Read an analog value from a potentiometer.
   - **Concepts:** ADC principles, voltage reference, ADC registers (`ADMUX`, `ADCSRA`).
+- [ ] **Lesson 6: I2C Communication** 
+  - **Goal:** Read data from a simple I2C sensor.
+  - **Concepts:** Master/Slave, Start/Stop conditions, Acknowledge bit, I2C registers (`TWBR`, `TWSR`, `TWCR`, `TWDR`).
 
 *(This roadmap will be updated as the project progresses.)*
