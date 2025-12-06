@@ -5,7 +5,8 @@
 // #define LESSON_1_BLINK
 // #define LESSON_2_BUTTON
 // #define LESSON_3_UART
-#define LESSON_4_TIMERS
+// #define LESSON_4_TIMERS
+#define LESSON_5_ADC
 
 // --- Step 2: Include Headers based on Selection ---
 #ifdef LESSON_1_BLINK
@@ -24,6 +25,11 @@
   #include "Module 3 - Timers and Analog Signals/Lesson 4 - Timers and Interrupts/Timer.h"
 #endif
 
+#ifdef LESSON_5_ADC
+  #include "Module 2 - Communication Protocols/Lesson 3 - UART Communication/UART.h"
+  #include "Module 3 - Timers and Analog Signals/Lesson 5 - Analog to Digital Conversion (ADC)/ADC.h"
+#endif
+
 // --- Step 3: Main Program Logic ---
 void setup() {
   #if defined(LESSON_1_BLINK)
@@ -34,6 +40,9 @@ void setup() {
     lesson_3_setup();
   #elif defined(LESSON_4_TIMERS)
     lesson_4_setup();
+  #elif defined(LESSON_5_ADC)
+    lesson_3_setup(); // Initialize UART
+    lesson_5_setup(); // Initialize ADC
   #else
     #error "No lesson selected. Please define a lesson at the top of main.cpp"
   #endif
@@ -48,5 +57,7 @@ void loop() {
     lesson_3_loop();
   #elif defined(LESSON_4_TIMERS)
     lesson_4_loop();
+  #elif defined(LESSON_5_ADC)
+    lesson_5_loop();
   #endif
 }
