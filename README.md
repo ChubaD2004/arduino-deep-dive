@@ -36,7 +36,7 @@ Schematics are located in the `schematics/` directory.
 - [x] **Lesson 4: Timers and Interrupts**
   - **Goal:** Create a precise, non-blocking delay using a hardware timer and interrupts.
   - **Concepts:** Timers/Counters, Prescalers, Interrupt Service Routines (ISR), Timer registers (`TCNTx`, `TCCRxA/B`, `TIMSKx`, `TIFRx`).
-- [ ] **Lesson 5: Analog to Digital Conversion (ADC)**
+- [x] **Lesson 5: Analog to Digital Conversion (ADC)**
   - **Goal:** Read an analog value from a potentiometer.
   - **Concepts:** ADC principles, voltage reference, ADC registers (`ADMUX`, `ADCSRA`).
 - [ ] **Lesson 6: I2C Communication** 
