@@ -37,9 +37,17 @@ Schematics are located in the `schematics/` directory.
   - **Goal:** Create a precise, non-blocking delay using a hardware timer and interrupts.
   - **Concepts:** Timers/Counters, Prescalers, Interrupt Service Routines (ISR), Timer registers (`TCNTx`, `TCCRxA/B`, `TIMSKx`, `TIFRx`).
 - [x] **Lesson 5: Analog to Digital Conversion (ADC)**
-  - **Goal:** Read an analog value from a potentiometer.
+  - **Goal:** Read an analog value from a potentiometer using a blocking method.
   - **Concepts:** ADC principles, voltage reference, ADC registers (`ADMUX`, `ADCSRA`).
-- [ ] **Lesson 6: I2C Communication** 
+
+### Module 4 - Advanced Peripherals
+- [ ] **Lesson 6: ADC with Interrupts**
+  - **Goal:** Read analog values asynchronously without blocking the main loop.
+  - **Concepts:** ADC Interrupts, `volatile` variables, combining ADC and Interrupt knowledge.
+- [ ] **Lesson 7: Fast PWM**
+  - **Goal:** Control LED brightness using hardware PWM.
+  - **Concepts:** ...
+- [ ] **Lesson 8: I2C Communication**
   - **Goal:** Read data from a simple I2C sensor.
   - **Concepts:** Master/Slave, Start/Stop conditions, Acknowledge bit, I2C registers (`TWBR`, `TWSR`, `TWCR`, `TWDR`).
 
