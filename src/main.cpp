@@ -7,7 +7,8 @@
 // #define LESSON_3_UART
 // #define LESSON_4_TIMERS
 // #define LESSON_5_ADC
-#define LESSON_6_ADC_INTERRUPT
+// #define LESSON_6_ADC_INTERRUPT
+#define LESSON_7_PWM
 
 
 
@@ -38,6 +39,10 @@
   #include "Module 4 - Advanced Peripherals/Lesson 6 - ADC with Interrupts/ADC_Interrupt.h"
 #endif
 
+#ifdef LESSON_7_PWM 
+  #include "Module 4 - Advanced Peripherals/Lesson 7 - Fast PWM/PWM.h"
+#endif
+
 // --- Step 3: Main Program Logic ---
 void setup() {
   #if defined(LESSON_1_BLINK)
@@ -54,6 +59,8 @@ void setup() {
   #elif defined(LESSON_6_ADC_INTERRUPT)
     lesson_3_setup(); 
     lesson_6_setup();
+  #elif defined(LESSON_7_PWM)
+    lesson_7_setup();
   #else
     #error "No lesson selected. Please define a lesson at the top of main.cpp"
   #endif
@@ -72,5 +79,7 @@ void loop() {
     lesson_5_loop();
   #elif defined(LESSON_6_ADC_INTERRUPT)
     lesson_6_loop();
+  #elif defined(LESSON_7_PWM)
+    lesson_7_loop();
   #endif
 }

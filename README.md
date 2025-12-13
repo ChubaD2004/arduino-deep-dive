@@ -41,12 +41,13 @@ Schematics are located in the `schematics/` directory.
   - **Concepts:** ADC principles, voltage reference, ADC registers (`ADMUX`, `ADCSRA`).
 
 ### Module 4 - Advanced Peripherals
-- [ ] **Lesson 6: ADC with Interrupts**
+- [x] **Lesson 6: ADC with Interrupts**
   - **Goal:** Read analog values asynchronously without blocking the main loop.
   - **Concepts:** ADC Interrupts, `volatile` variables, combining ADC and Interrupt knowledge.
-- [ ] **Lesson 7: Fast PWM**
+- [x] **Lesson 7: Fast PWM**
   - **Goal:** Control LED brightness using hardware PWM.
-  - **Concepts:** ...
+  - **Concepts:** PWM principles, Fast PWM Mode, Output Compare Registers (`OCRnx`), Timer Control Registers (`TCCRxA/B`).
+  - **[View Schematic](./src/Module%204%20-%20Advanced%20Peripherals/Lesson%207%20-%20Fast%20PWM/schematic/lesson-07-pwm-schematic.svg)**
 - [ ] **Lesson 8: I2C Communication**
   - **Goal:** Read data from a simple I2C sensor.
   - **Concepts:** Master/Slave, Start/Stop conditions, Acknowledge bit, I2C registers (`TWBR`, `TWSR`, `TWCR`, `TWDR`).
