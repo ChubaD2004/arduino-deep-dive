@@ -52,4 +52,4 @@ Schematics are located in the `schematics/` directory.
   - **Goal:** Read data from a simple I2C sensor.
   - **Concepts:** Master/Slave, Start/Stop conditions, Acknowledge bit, I2C registers (`TWBR`, `TWSR`, `TWCR`, `TWDR`).
 
-*(This roadmap will be updated as the project progresses.)*
+*(This roadmap will be updated as the project progresses..)*   
