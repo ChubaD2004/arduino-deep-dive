@@ -8,7 +8,9 @@
 // #define LESSON_4_TIMERS
 // #define LESSON_5_ADC
 // #define LESSON_6_ADC_INTERRUPT
-#define LESSON_7_PWM
+// #define LESSON_7_PWM
+#define LESSON_8_I2C
+
 
 
 
@@ -43,6 +45,11 @@
   #include "Module 4 - Advanced Peripherals/Lesson 7 - Fast PWM/PWM.h"
 #endif
 
+#ifdef LESSON_8_I2C 
+  #include "Module 2 - Communication Protocols/Lesson 3 - UART Communication/UART.h"
+  #include "Module 4 - Advanced Peripherals/Lesson 8 - I2C Communication/I2C.h"
+#endif
+
 // --- Step 3: Main Program Logic ---
 void setup() {
   #if defined(LESSON_1_BLINK)
@@ -61,6 +68,9 @@ void setup() {
     lesson_6_setup();
   #elif defined(LESSON_7_PWM)
     lesson_7_setup();
+  #elif defined(LESSON_8_I2C)
+    lesson_3_setup(); // Initialize UART
+    lesson_8_setup(); // Initialize I2C
   #else
     #error "No lesson selected. Please define a lesson at the top of main.cpp"
   #endif
@@ -81,5 +91,7 @@ void loop() {
     lesson_6_loop();
   #elif defined(LESSON_7_PWM)
     lesson_7_loop();
+  #elif defined(LESSON_8_I2C)
+    lesson_8_loop();
   #endif
 }

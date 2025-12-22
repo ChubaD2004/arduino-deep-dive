@@ -48,7 +48,7 @@ Schematics are located in the `schematics/` directory.
   - **Goal:** Control LED brightness using hardware PWM.
   - **Concepts:** PWM principles, Fast PWM Mode, Output Compare Registers (`OCRnx`), Timer Control Registers (`TCCRxA/B`).
   - **[View Schematic](./src/Module%204%20-%20Advanced%20Peripherals/Lesson%207%20-%20Fast%20PWM/schematic/lesson-07-pwm-schematic.svg)**
-- [ ] **Lesson 8: I2C Communication**
+- [x] **Lesson 8: I2C Communication**
   - **Goal:** Read data from a simple I2C sensor.
   - **Concepts:** Master/Slave, Start/Stop conditions, Acknowledge bit, I2C registers (`TWBR`, `TWSR`, `TWCR`, `TWDR`).
 

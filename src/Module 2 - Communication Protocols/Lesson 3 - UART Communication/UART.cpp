@@ -1,6 +1,7 @@
 #include <Arduino.h> 
 #include "UART.h"
 #include <avr/io.h> 
+#include <stdio.h>
 
 void lesson_3_setup() {
     // 1. Set the Baud Rate for 9600 bps at 16MHz clock.
@@ -44,4 +45,12 @@ void uart_send_string(const char* str) {
         // Move to the next character.
         i++;
     }
+}
+
+void uart_send_hex(uint8_t num) {
+    char buffer[3]; // 2 hex digits + null terminator
+    // "sprintf" is a powerful function for formatting strings.
+    // "%02X" means: format as 2-digit, uppercase hexadecimal.
+    sprintf(buffer, "%02X", num);
+    uart_send_string(buffer);
 }
